@@ -1,0 +1,66 @@
+In this document, the meaning of each column in each sheet is explained
+
+overview:
+  - Drug = Drug name
+  - Outcome = Adverse event
+  - fda_n = Number of reports retrieved by the FDA API containing the drug and the outcome.
+  - n = Number of reports retrieved after the prepossessing.
+  - openvigil_n = Number of reports retrieved by OpenVigil 2 web service.
+  - ground_truth = Drug-AE relationships according OMOP gold standard, used as benchmark. 
+  - openvigil_signal = Signal detected by OpenVigil 2?
+  - x_squared_cut_off = Signal detected by chi squared test?
+  - fisher_cut_off = Signal detected by fisher's exact test?
+  - prr_cut_off = Signal detected by PRR?
+  - ror_cut_off = Signal detected by ROR?
+  - bcpnn_cut_off = Signal detected by BCPNN?
+  - gps_cut_off = Signal detected by GPS?
+  - mcem_cut_off = Signal detected by MCEM?
+
+all_data:
+  - Drug = Drug name
+  - Outcome = Adverse event
+  - fda_n = Number of reports retrieved by the FDA API containing the drug and the outcome.
+  - n = Number of reports retrieved after the prepossessing.
+  - openvigil_n = Number of reports retrieved by OpenVigil 2 web service.
+  - ground_truth = Drug-AE relationships according OMOP gold standard, used as benchmark. 
+  - x_squared_cut_off = Signal detected by chi squared test?
+  - x_squared = Chi squared test result
+  - x_squared_p_value = Chi squared test p-value result
+  - fisher_cut_off = Signal detected by fisher's exact test?
+  - fisher_ROR = ROR obtained by fisher's exact test
+  - fisher_p_value = Fisher's exact test p-value result
+  - prr_cut_off = Signal detected by PRR?
+  - prr = PRR value 
+  - prr_lb95 = PRR lower bound at 95% of confidence 
+  - ror_cut_off = Signal detected by ROR?
+  - ror = ROR value 
+  - ror_lb95 = ROR lower bound at 95% of confidence 
+  - bcpnn_cut_off = Signal detected by BCPNN?
+  - bcpnn_IC0025 = IC lower bound at 95% of confidence
+  - bcpnn_OBSvsEXP = BCPNN observed vs expected value
+  - gps_cut_off = Signal detected by GPS?
+  - gps_lb95 = GPS lower bound at 95% of confidence 
+  - mcem_cut_off = Signal detected by MCEM?
+  - mcem_Q_0.05 = MCEM lower bound at 95% of confidence
+  - mcem_OBSvsEXP = MCEM observed vs expected value
+  - openvigil_signal = Signal detected by OpenVigil 2?
+
+reliability:
+  These sheet shows the sensitivity and specificity obtained by each method at their optimal threshold
+
+jury_vote/red_flag/unanimous_consensus:
+  - methods = method/s used in the combination
+  - n_qualifiers = number of methods used in the combination
+  - sn = Sensitivity
+  - sp = Specificity
+  - prec = Precision
+  - youden_J = Informdeness
+  - f0.5 = F score at 0.5
+  - f1 = F score at 1
+  - f2 = F score at 2
+  - MCC = Matthews correlation coefficient
+  - TP = True positives
+  - TN = True negatives
+  - FP = False positives
+  - FN = False negatives
+

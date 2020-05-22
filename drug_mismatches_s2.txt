@@ -1,0 +1,3 @@
+Drugs in s2 that do not match with any drug in FAERS database:
+cefathiamidine
+perospirone

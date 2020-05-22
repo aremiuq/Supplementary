@@ -1,0 +1,5 @@
+Drugs in s1 that do not match with any drug in FAERS database:
+amylases
+endopeptidases
+
+Both names are very generic, for these reason, they can't be matched.
